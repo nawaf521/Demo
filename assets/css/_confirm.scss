@@ -1,0 +1,290 @@
+.confirm-right {
+
+    // top-data-confirm
+    .top-data-confirm {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        // data-user
+        .block-data-user-confirm {
+            max-width: 38.666667%;
+            width: 100%;
+            margin-left: 30px;
+
+            .data-user-confirm {
+                background: $white-color;
+                color: $font-color-sub;
+                box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.05);
+                @include b-radius(10px);
+
+                h3 {
+                    color: $bg-header;
+                    font-size: $font-size + 6;
+                    background: $sub-color3;
+                    height: 60px;
+                    line-height: 60px;
+                    padding: 0 15px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-bottom: 1px solid rgba($font-color-sub, 0.23);
+                }
+
+                .address-user-block {
+                    padding: 33px 20px;
+                    background: url('../images/bg-car.svg');
+                    background-repeat: no-repeat;
+                    background-position: 10px center;
+
+                    h5 {
+                        color: $bg-header;
+                        font-size: $font-size;
+                    }
+
+                    .address-user {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+
+                        .address-right {
+                            font-size: $font-size - 3;
+                        }
+                    }
+
+                    .btn-change-address {
+                        a {
+                            background: $bg-header;
+                            border: 1px solid $color-shop;
+                            color: $white-color;
+                            display: block;
+                            height: 30px;
+                            line-height: 30px;
+                            font-size: $font-size - 5;
+                            @include b-radius(25px);
+                            padding: 0 10px;
+                            margin-top: 30px;
+
+                            &:hover {
+                                background: $bg-footer;
+                            }
+
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        // payment
+        .payment-block {
+            max-width: 57.333333%;
+            width: 100%;
+
+            .item-payment-block {
+                background: $white-color;
+                box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.05);
+                padding: 15px;
+                @include b-radius(10px);
+
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+
+                h3 {
+                    color: $bg-header;
+                    font-size: $font-size;
+                }
+
+                .form-payment {
+                    .form-check {
+                        margin-bottom: 7px;
+                    }
+
+                    label {
+                        color: $sub-color2;
+                        font-size: $font-size - 3;
+                        padding-right: 30px;
+                    }
+                }
+
+                .data-details-payment-block {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .number-cart {
+                        color: $sub-color2;
+                        font-size: $font-size - 3;
+                        direction: ltr;
+                        margin-top: 20px;
+                    }
+
+                    .btn-change-payment {
+                        text-align: left;
+                        margin-top: 10px;
+
+                        a {
+                            background: $bg-header;
+                            border: 1px solid $color-shop;
+                            color: $white-color;
+                            height: 30px;
+                            line-height: 30px;
+                            font-size: $font-size - 5;
+                            @include b-radius(25px);
+                            padding: 0 10px;
+                            margin-top: 30px;
+
+                            &:hover {
+                                background: $bg-footer;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // details-order-blocks
+    .details-order-blocks {
+        background: $white-color;
+        @include b-radius(10px);
+        padding-bottom: 30px;
+        box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+
+        .order-blocks {
+            padding: 30px;
+
+            h4 {
+                color: $bg-header;
+                font-size: $font-size;
+            }
+
+            .item-order-details-block {
+                margin-top: 30px;
+                .item-order-details {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 30px;
+                    .iimg-pro-cart {
+                        img {
+                            height: 75px;
+                            width: auto;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .products-name-data {
+                        width: 50%;
+                        color: $sub-color4;
+                        font-size: $font-size - 2;
+                        padding-right: 15px;
+                        @include line-hight;
+
+                        .desc-details-product {
+                            font-size: $font-size - 4;
+                            color: rgba($sub-color4, 0.7);
+                        }
+                    }
+
+                    .quantity-numner-details {
+                        @include line-hight;
+                        span {
+                            background: #EFF1F4;
+                            display: block;
+                            width: 50px;
+                            text-align: center;
+                            height: 40px;
+                            line-height: 40px;
+                            @include b-radius(5px);
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .price-product-order {
+                        @include line-hight;
+                        color: $sub-color4;
+                        text-align: center;
+                    }
+                }
+
+            }
+        }
+
+        .totlal-order-bootom{
+            padding-top: 20px;
+            border-top:1px solid #ddd;
+            padding-left: 60px;
+            text-align: left;
+            font-size: $font-size;
+            span{
+                color:$bg-header;
+                margin-right: 10px;
+            }
+        }
+
+
+    }
+}
+
+
+// confirm-left
+.confirm-left {
+    .block-coupon {
+        h6 {
+            color: $sub-color4;
+            font-size: $font-size - 2;
+        }
+
+        input {
+            border: 2px solid $sub-color;
+            font-size: $font-size - 5;
+            @include b-radius(10px);
+            box-shadow: 0 0 10px 4px rgba(31, 84, 195, 0.15);
+            height: 52px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .block-total-confirm {
+        .total-confirm {
+            color: $sub-color4;
+            font-size: $font-size + 2;
+
+            .price-total-confirm {
+                color: $bg-header;
+                font-size: $font-size + 16;
+                margin-right: 10px;
+            }
+        }
+
+        p {
+            color: $sub-color2;
+            font-size: $font-size - 4;
+            line-height: 27px;
+            margin-top: 16px;
+        }
+    }
+
+
+    .btn-link-confirm {
+        background: $bg-header;
+        color: $white-color;
+        @include b-radius(25px);
+        font-size: $font-size + 2;
+        display: block;
+        width: 100%;
+        padding: 8px;
+        margin-top: 25px;
+        text-align: center;
+        border: none;
+
+        &:hover {
+            background: $bg-footer;
+        }
+    }
+}

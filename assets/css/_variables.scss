@@ -1,0 +1,36 @@
+// var --------
+$font-size: 20px;
+$bg-header:#AD7B38;
+$sub-color:#C9952E;
+$sub-color2:#696F6F;
+$sub-color3:#FAFAFA;
+$sub-color4:#5F6772;
+$sub-color5:#515C6F;
+$white-color:#ffffff;
+$font-color:#404040;
+$font-color-sub:#8B8D8D;
+$bg-footer:#4E5052;
+$bg-bottom-footer:#2E2E2E;
+$bg-block:#F5F5F5;
+$color-shop:#707070;
+$red-color:#E61F1F;
+
+// Fonts --------
+$font-main: Ara Assaf;
+// Fonts icon --------
+
+
+// functions --------
+@mixin b-radius($val) {
+  -webkit-border-radius: $val !important;
+  -moz-border-radius: $val !important;
+  border-radius: $val !important;
+}
+
+@mixin transi($property, $time) {
+  -webkit-transition: $property $time !important;
+  -moz-transition: $property $time !important;
+  -ms-transition: $property $time !important;
+  -o-transition: $property $time !important;
+  transition: $property $time !important;
+}

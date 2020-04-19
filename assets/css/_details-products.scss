@@ -1,0 +1,199 @@
+// breadcrumb
+.breadcrumb {
+    background-color: transparent;
+    color: $bg-header;
+
+    a {
+        color: $bg-header;
+
+        &:hover {
+            color: $font-color-sub;
+            font-weight: bold;
+        }
+
+        &::after {
+            content: '\f053';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: relative;
+            color: $font-color-sub;
+            margin: 0 10px;
+            font-size: $font-size - 4;
+        }
+    }
+}
+
+// Details Products
+.details-products-block {
+    background: $white-color;
+    @include b-radius(10px);
+    padding: 15px 0;
+    padding-bottom: 30px;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+
+    .title-products {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+        border-bottom: 1px solid rgba(139, 141, 141, 0.3);
+
+        h4 {
+            font-size: $font-size + 2;
+        }
+
+        a {
+            color: $bg-header;
+            font-size: $font-size + 4;
+            cursor: pointer;
+        }
+    }
+}
+
+.block-details {
+    padding: 20px;
+
+    h2 {
+        color: $bg-header;
+        font-size: $font-size + 4;
+    }
+
+    p {
+        color: $sub-color2;
+        font-size: $font-size - 4;
+        line-height: 34px;
+    }
+}
+
+// details-products-block-left
+.details-products-block-left {
+    background: $white-color;
+    @include b-radius(10px);
+    padding-bottom: 30px;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+
+    // price 
+    .price-details-left {
+        background: #FAFAFA;
+        border-bottom: 1px solid rgba(139, 141, 141, 0.25);
+        padding: 7px 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        .price-before {
+            color: $bg-footer;
+            font-size: $font-size + 4;
+
+            .class-number {
+                color: $font-color-sub;
+                text-decoration: line-through;
+            }
+        }
+
+        .price-now-left {
+            display: flex;
+            justify-content: space-between;
+            color: $bg-footer;
+            font-size: $font-size + 2;
+            margin: 10px 0;
+
+            .price-now {
+                color: $bg-header;
+                font-size: $font-size + 13px;
+                line-height: $font-size + 16px;
+                margin: 0 5px;
+            }
+
+            .w-offter {
+                background: $font-color-sub;
+                color: $white-color;
+                padding: 0 10px;
+                @include b-radius(25px);
+                line-height: 38px;
+            }
+        }
+
+        .note-price {
+            color: $font-color-sub;
+            font-size: $font-size - 5;
+            text-align: center;
+            margin: 20px 0;
+        }
+    }
+
+    // Size
+    .block-size {
+        padding: 20px;
+
+        h5 {
+            color: $bg-header;
+        }
+
+       
+    }
+
+    .add-to-cart {
+        text-align: center;
+        margin: 0 20px;
+        a {
+            background: $bg-header;
+            display: inline-block;
+            text-align: center;
+            color: $white-color;
+            padding: 10px 0;
+            margin-top: 30px;
+            width: 100%;
+            @include b-radius(25px);
+
+            img {
+                margin-left: 10px;
+            }
+
+            &:hover {
+                background: $bg-footer;
+            }
+        }
+    }
+    
+}
+
+
+#size--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .js-form-type-checkbox {
+        display: block;
+        margin: 10px  0  0 5px;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+    label {
+        border: 2px solid rgba(77, 98, 128, 0.4);
+        color: #4d6280;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 17px;
+        display: block;
+        margin-bottom: 0;
+        -webkit-transition: all 0.5s !important;
+        -moz-transition: all 0.5s !important;
+        -ms-transition: all 0.5s !important;
+        -o-transition: all 0.5s !important;
+        transition: all 0.5s !important;
+    }
+    label:hover,
+    .service-selected label {
+       color: #fff;
+       background-color: #8a8d8d;
+       border-color: #8a8d8d;
+   }
+}
+
+
+
+
+
+
+

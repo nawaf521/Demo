@@ -1,0 +1,284 @@
+// service shop-block
+.service-shop-block {
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+    .items-service-shop {
+        text-align: center;
+        border-left: 1px solid #D4D4D4;
+
+        img {
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: $bg-footer;
+            font-size: $font-size + 2;
+        }
+
+        p {
+            color: $font-color-sub;
+            font-size: $font-size - 6;
+        }
+
+        &:last-child {
+            border-left: none;
+        }
+    }
+}
+
+// End service-shop-block
+
+.banner-shop {
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
+
+    img {
+        height: 750px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+// main-shop
+
+.main-shop {
+    background: url('../images/bg-page-shop2.png');
+    background-position: center;
+    background-size: cover;
+    padding-top: 70px;
+
+    .content-shop {
+        background: #F8F8F8;
+        box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.15);
+        padding: 20px 0;
+
+        // product-dept-
+        .product-dept-shop {
+            padding: 15px;
+
+            h2 {
+                padding-right: 15px;
+            }
+
+            .item-product-dept {
+                a {
+                    background: $white-color;
+                    text-align: center;
+                    display: block;
+                    border: 1px solid $color-shop;
+                    overflow: hidden;
+
+                    img {
+                        width: auto;
+                        height: 320px;
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+                        position: relative;
+                        z-index: 0;
+                    }
+
+                    h3 {
+                        background: $color-shop;
+                        color: $white-color;
+                        font-size: $font-size + 12;
+                        margin-bottom: 0;
+                        height: 75px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    &:hover {
+                        box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.4);
+
+                        img {
+                            transform: scale(1.1);
+                        }
+
+                        h3 {
+                            background: $bg-header;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        // center-banner-shop
+        .center-banner-shop {
+            img {
+                width: 100%;
+            }
+
+            .data-banner {
+                position: absolute;
+                z-index: 1;
+                margin-top: 180px;
+                margin-right: 60px;
+                text-align: center;
+
+                h1 {
+                    color: $white-color;
+                    font-size: $font-size * 3 + 10;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    color: $white-color;
+                    font-size: $font-size + 4;
+                    margin-bottom: 0;
+                }
+
+                a {
+                    background: $white-color;
+                    color: $bg-header;
+                    @include b-radius(25px);
+                    display: inline-block;
+                    padding: 5px 40px;
+                    margin-top: 20px;
+                    border: 2px solid transparent;
+
+                    &:hover {
+                        background: $bg-header;
+                        color: $white-color;
+                        border: 2px solid $white-color;
+                    }
+                }
+            }
+        }
+
+
+        // Banner Bottom
+        .banner-bottom-shop {
+
+            // offer-banner-right
+            .banner-bottom-offer-right {
+                overflow: hidden;
+
+                .offer-banner-right {
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 530px;
+                        object-fit: contain;
+                    }
+
+                    .data-banner-right {
+                        position: absolute;
+                        z-index: 2;
+                        top: 30%;
+                        text-align: center;
+                        right: 140px;
+                        color: $white-color;
+
+                        h2 {
+                            font-size: 75px;
+                            margin-top: 15px;
+                            margin-bottom: 0;
+                        }
+
+                        img {
+                            width: auto;
+                            height: 86px;
+                        }
+                    }
+
+                    &::before {
+                        content: '';
+                        background: rgba(0, 0, 0, 0.55);
+                        width: 100%;
+                        height: 530px;
+                        position: absolute;
+                        top: 0;
+                        z-index: 1;
+                        display: inline-block;
+                    }
+
+                    &:hover {
+                        img {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+
+            // banner-bottom-offer-left
+            .banner-bottom-offer-left {
+                overflow: hidden;
+
+                .offer-banner-left {
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 530px;
+                    }
+
+                    .data-bootm-banner {
+                        position: absolute;
+                        z-index: 9;
+                        bottom: 40px;
+                        margin-right: 20px;
+
+                        h2 {
+                            color: $white-color;
+                            font-size: $font-size + 16;
+                        }
+
+                        a {
+                            background: $white-color;
+                            color: $bg-header;
+                            @include b-radius(25px);
+                            display: inline-block;
+                            padding: 5px 40px;
+                            margin-top: 20px;
+                            border: 2px solid transparent;
+
+                            &:hover {
+                                background: $bg-header;
+                                color: $white-color;
+                                border: 2px solid $white-color;
+                            }
+                        }
+                    }
+
+                    .offer-block-price {
+                        background: url('../images/tag-offer.svg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: absolute;
+                        left: 0;
+                        height: 150px;
+                        width: 150px;
+                        color: $white-color;
+                        text-align: center;
+
+                        .price-offers {
+                            margin-top: 60px;
+                            line-height: 15px;
+                        }
+                    }
+
+                    &:hover {
+                        img {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+// service-footer-shop
+
+.service-footer-shop{
+    background:$white-color;
+    margin-top: 100px;
+}

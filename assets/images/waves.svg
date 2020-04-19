@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920.162" height="100.25" viewBox="0 0 1920.162 100.25">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.476" cy="-0.151" r="9.899" gradientTransform="matrix(0.052, 0.006, 0, 0.135, 0.451, -0.133)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#f2f2f2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.476" cy="-0.234" r="9.853" gradientTransform="matrix(0.049, -0.045, 0, 0.126, 0.453, -0.183)" xlink:href="#radial-gradient"/>
+  </defs>
+  <g id="waves" transform="translate(0.001 -0.001)">
+    <path id="wave" d="M112,646.1S279,595.749,524.456,598.4s353.438,54.429,632.874,53.918c98.641-.18,366.023-53.521,527.609-53.918s346.711,53.918,346.711,53.918v46.231H112Z" transform="translate(-111.489 -598.295)" opacity="0.136" fill="url(#radial-gradient)"/>
+    <path id="wave-2" data-name="wave" d="M112,552.816s13.805,28.89,351.86,29.728c186.944.464,391.847-50.493,514.213-50.493,209.487,0,370.164,57.1,534.78,56.1,228.054-.413,517.55-50.395,517.55-50.395V625.6H112Z" transform="translate(-112 -525.355)" opacity="0.136" fill="url(#radial-gradient-2)"/>
+  </g>
+</svg>

@@ -1,0 +1,267 @@
+// service home
+.service-home {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+
+    .items-service {
+        margin: 0 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+
+        a {
+            color: $white-color;
+
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+
+                .desc-item-service {
+                    background: rgba($bg-footer, 0.65);
+
+                    h2 {
+                        margin-top: 40px;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 500px;
+            }
+
+            .desc-item-service {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                text-align: center;
+                width: 100%;
+                height: 500px;
+                background: rgba($bg-header, 0.65);
+
+                .icon-service {
+                    img {
+                        width: auto;
+                        height: inherit;
+                    }
+                }
+
+                h2 {
+                    color: $white-color;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+}
+
+// End service home
+
+
+
+// Booking a home service 
+.booking-service {
+    background: $bg-footer;
+    color: $white-color;
+    padding: 80px 0;
+
+    h2 {
+        &::after {
+            content: '';
+            background: url('../images/bg-title.svg');
+            height: 7px;
+            width: 145px;
+            margin-top: 8px;
+            display: block;
+        }
+    }
+
+    p {
+        font-size: $font-size + 5;
+        margin-top: 40px;
+    }
+
+    // Form
+    .form-booking-home {
+        display: flex;
+
+        input {
+            @include b-radius(25px);
+            border: 2px solid $bg-header;
+            margin: 0 10px;
+
+            &:focus ,&:hover {
+                outline: none;
+                box-shadow: 0 0 10px 5px rgba(245, 245, 245, 0.3);
+            }
+        }
+
+        .btn {
+            width: 100%;
+            @include b-radius(25px);
+            border: none;
+            background-image: linear-gradient(to right top, #8a2387, #c72274, #ee4757, #fd7a37, #f5af19);
+            @include transi(all, 0.5s);
+
+            &:hover {
+                background-image: linear-gradient(to left top, #8a2387, #c72274, #ee4757, #fd7a37, #f5af19);
+
+            }
+        }
+    }
+
+    &::after {
+        content: '';
+        background: url('../images/waves.svg');
+        background-size: contain;
+        background-position: bottom;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+
+    }
+}
+
+// End Booking a home service 
+
+
+// Alrahden Now
+.alrahden-now {
+    padding: 80px 0;
+
+    h2 {
+        &::after {
+            content: '';
+            background: url('../images/bg-title.svg');
+            height: 7px;
+            width: 145px;
+            margin-top: 8px;
+            display: block;
+        }
+    }
+
+    .data-alrahden {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .item-now {
+            text-align: center;
+            width: 100%;
+
+            img {
+                height: 100px;
+                max-height: 100px;
+                margin-bottom: 10px;
+            }
+
+            .acount-number-now {
+                color: $bg-header;
+                font-size: 70px;
+            }
+
+            .title-now {
+                color: $font-color-sub;
+                font-size: $font-size + 5;
+            }
+        }
+
+    }
+
+}
+
+// End Alrahden Now
+
+// Customers Block
+.customers {
+    background: $white-color;
+    padding: 40px 0;
+
+    h2 {
+        &::after {
+            content: '';
+            background: url('../images/bg-title.svg');
+            height: 7px;
+            width: 145px;
+            margin-top: 8px;
+            display: block;
+        }
+    }
+}
+
+// End Customers Block
+
+
+// Mailing List Right
+.mailing-list-right {
+    width: 400px;
+    background: $bg-block;
+    @include b-radius(5px);
+    padding: 30px;
+    color: $font-color-sub;
+    position: fixed;
+    right: 0;
+    z-index: 9;
+    bottom: 200px;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.15);
+
+    .desc-mail-right {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        margin-top: 20px;
+
+        input {
+            border: 2px solid $bg-header;
+            @include b-radius(4px);
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .btn {
+            border: none;
+            @include b-radius(4px);
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+            background: $bg-header;
+
+            &:hover {
+                background: $bg-bottom-footer;
+            }
+        }
+    }
+
+    .btn-colse-mail {
+        font-size: $font-size + 7;
+        color: $bg-header;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        padding-right: 3px;
+        text-align: center;
+        border: 2px solid transparent;
+        cursor: pointer;
+        @include transi(all, 0.5s);
+        &:hover {
+            border: 2px solid $bg-header;
+            @include b-radius(50px);
+        }
+    }
+}

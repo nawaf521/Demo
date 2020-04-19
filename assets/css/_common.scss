@@ -1,0 +1,256 @@
+@import "variables";
+
+body,
+html {
+  background: $bg-block;
+  padding: 0;
+  margin: 0;
+  font-family: $font-main;
+  font-size: $font-size;
+  color: $font-color;
+  height: 100%;
+  text-align: right;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+img,
+h1,
+h2,
+h3,
+h4,
+button {
+  @include transi(all, 0.5s);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-main;
+  font-weight: normal;
+}
+
+a {
+  position: relative;
+  text-decoration: none !important;
+}
+
+a:hover,
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none !important;
+  outline: none;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.no-m {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.no-p {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.no-p-right {
+  padding-right: 0 !important;
+}
+
+.no-p-left {
+  padding-left: 0 !important;
+}
+
+.clear_all {
+  clear: both;
+}
+
+
+.f-right {
+  float: right;
+}
+
+.f-left {
+  float: left;
+}
+
+//
+@mixin line-hight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin align-center {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  /* works with row or column */
+  flex-direction: row;
+  -webkit-align-items: center;
+}
+
+@mixin align-center-line {
+  -webkit-flex-direction: row;
+  /* works with row or column */
+  flex-direction: row;
+  -webkit-align-items: center;
+}
+
+@mixin center_b {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+img {
+  object-fit: cover;
+}
+
+
+.main-slider {
+  direction: ltr;
+}
+
+.main-web {
+  margin-top: 150px;
+}
+
+.header-home {
+  display: none;
+}
+
+
+// 
+.form-row>.col,
+.form-row>[class*=col-] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.form-control {
+  border: 1px solid rgba($font-color-sub, 0.5);
+  @include b-radius(10px);
+  box-shadow: 0 0 6px 2px rgba(31, 84, 195, 0.15);
+  height: 52px;
+  font-size: $font-size - 4;
+
+  &:focus {
+    border: 1px solid $bg-header;
+    box-shadow: 0 0 10px 4px rgba(31, 84, 195, 0.15);
+  }
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+
+.custom-control-label {
+  margin-right: 35px;
+
+  &:before {
+    left: inherit;
+    right: -35px;
+  }
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  content: "\f00c";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  border-color: $bg-header;
+  background-color: $bg-header;
+  line-height: 22px;
+  font-size: 14px;
+  padding-right: 4px;
+  width: 25px;
+  height: 25px;
+  top: 0px;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn-send {
+  background: $bg-header;
+  color: $white-color;
+  font-size: $font-size + 4;
+  display: block;
+  border: none;
+  margin: 0 auto;
+  padding: 10px 80px;
+  @include b-radius(50px);
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background: $bg-footer;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.custom-select {
+  background-position: 15px;
+}
+
+.mobile-menu-toggle {
+  display: none;
+}
+
+// Modal
+.modal-backdrop.show {
+  opacity: 0.9;
+}
+
+
+.modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+}
+
+@media(max-width: 768px) {
+  .modal-dialog {
+    min-height: calc(100vh - 20px);
+  }
+}
+
+.daterangepicker.ltr {
+  font-family: roboto, arial, helvetica neue, sans-serif !important;
+  font-size: 14px !important;
+  z-index: 1;
+}
+
+.daterangepicker td,
+.daterangepicker td.off,
+.daterangepicker td.off.in-range,
+.daterangepicker td.off.start-date,
+.daterangepicker td.off.end-date,
+.daterangepicker td.available:hover, 
+.daterangepicker th.available:hover {
+  border: 1px solid rgba(0, 0, 0, 0.17);
+}

@@ -1,0 +1,444 @@
+// Main Slider
+// Main Slider
+.main-slider {
+    margin-bottom: 0 !important;
+    margin-top: -16px;
+    img {
+        width: 100%;
+        // height: 100vh;
+        // height: calc(100vh - 133px);
+        height: calc(100vh - 113px);
+    }
+
+    .slick-arrow {
+        background: rgba($white-color, 0.6);
+        width: 92px;
+        height: 92px;
+        @include b-radius(50px);
+        z-index: 9;
+
+        &:hover {
+            background: $white-color;
+        }
+
+        &::before {
+            content: '';
+            background: url('../images/arrow.svg');
+            width: 18px;
+            height: 36px;
+            position: absolute;
+            top: 30px;
+            right: 33px;
+            opacity: 1;
+        }
+
+    }
+
+    .slick-prev {
+        right: 25px;
+    }
+
+    .slick-next {
+        left: 25px;
+
+        &::before {
+            transform: rotate(180deg);
+            right: 40px;
+        }
+    }
+
+    .slick-dots {
+        bottom: 25px;
+
+        li {
+            width: 20px;
+            height: 20px;
+            background: $sub-color;
+            color: transparent;
+            opacity: 1;
+            @include b-radius(50px);
+            border: 2px solid transparent;
+
+            button {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        .slick-active {
+            background: $font-color-sub;
+            border: 2px solid #707070;
+            width: 55px;
+        }
+    }
+}
+
+
+
+// customers-service
+.customers-service {
+    margin-bottom: 30px !important;
+
+    .item-custom {
+        margin: 0 10px;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            width: auto;
+            height: 85px;
+            margin: 0 auto;
+        }
+    }
+
+    .slick-dots {
+        bottom: -50px;
+
+        li {
+            width: 11px;
+            height: 11px;
+            background: $sub-color;
+            color: transparent;
+            opacity: 1;
+            @include b-radius(50px);
+            border: 2px solid transparent;
+
+            button {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        .slick-active {
+            background: $font-color-sub;
+            border: 2px solid #707070;
+            width: 33px;
+        }
+    }
+}
+
+// slider-producst-details
+.slider-producst-details  , .slider-page{
+
+    .item-slider-details {
+        text-align: center;
+        img {
+            max-width: 100%;
+            width: auto;
+            height: 415px;
+            margin: 0 auto;
+        }
+    }
+
+    .slick-dots {
+        bottom: -50px;
+
+        li {
+            width: 11px;
+            height: 11px;
+            background: $sub-color;
+            color: transparent;
+            opacity: 1;
+            @include b-radius(50px);
+            border: 2px solid transparent;
+
+            button {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        .slick-active {
+            background: $font-color-sub;
+            border: 2px solid #707070;
+            width: 33px;
+        }
+    }
+}
+
+
+.slider-page{
+    img {
+        max-width: 100%;
+        width: auto;
+        height: 310px;
+        margin: 0 auto;
+    }
+}
+
+
+// 
+
+// our-agents-service
+
+.our-agents-service  {
+    .item-custom {
+        margin: 0 10px;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            width: auto;
+            height: 85px;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+    }
+    .slick-dots {
+        bottom: -50px;
+
+        li {
+            width: 11px;
+            height: 11px;
+            background: $sub-color;
+            color: transparent;
+            opacity: 1;
+            @include b-radius(50px);
+            border: 2px solid transparent;
+
+            button {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        .slick-active {
+            background: $font-color-sub;
+            border: 2px solid #707070;
+            width: 33px;
+        }
+    }
+}
+
+// 
+.projects-block{
+
+    .item-projects {
+        margin: 20px;
+        text-align: center;
+        border: 1px solid #AD7B38;
+        background: #fff;
+        padding: 5px;
+        border-radius: 10px;
+        @include transi(all, 0.5s);
+        h3{
+            color: #AD7B38;
+            font-size: 25px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        img {
+            max-width: 100%;
+            width: auto;
+            height: 370px;
+            margin: 0 auto;
+            border-radius: 10px;
+            opacity: 0.8;
+            // object-fit: contain;
+        }
+        &:hover{
+            box-shadow: 0 0px 10px 7px rgba(0, 0, 0, 0.3);
+            img {
+                opacity: 1;
+            }
+        }
+    }
+
+    .slick-dots {
+        bottom: 0;
+        position: relative;
+        li {
+            width: 11px;
+            height: 11px;
+            background: $sub-color;
+            color: transparent;
+            opacity: 1;
+            @include b-radius(50px);
+            border: 2px solid transparent;
+
+            button {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        .slick-active {
+            background: $font-color-sub;
+            border: 2px solid #707070;
+            width: 33px;
+        }
+    }
+
+}
+
+
+// slider-catelog
+
+.slider-catelog{
+    .item-slider-catelog {
+        margin:20px;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            width: auto;
+            height: 600px;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+    }
+
+    .slick-arrow {
+       
+        width: 92px;
+        height: 92px;
+        @include b-radius(50px);
+        z-index: 9;
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+        }
+
+        &::before {
+            content: '';
+            background: url('../images/arrow.svg');
+            width: 18px;
+            height: 36px;
+            position: absolute;
+            top: 30px;
+            right: 33px;
+            opacity: 1;
+        }
+
+    }
+
+    .slick-prev {
+        right: 25px;
+    }
+
+    .slick-next {
+        left: 25px;
+
+        &::before {
+            transform: rotate(180deg);
+            right: 40px;
+        }
+    }
+
+    .slick-dots {
+        bottom: 0px;
+        position: relative;
+        li {
+            width: 11px;
+            height: 11px;
+            background: $sub-color;
+            color: transparent;
+            opacity: 1;
+            @include b-radius(50px);
+            border: 2px solid transparent;
+
+            button {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        .slick-active {
+            background: $font-color-sub;
+            border: 2px solid #707070;
+            width: 33px;
+        }
+    }
+}
+
+// Video
+
+.videos-slider{
+    .item-video {
+        margin:20px;
+        padding: 10px 10px 0;
+        background: #fff;
+        text-align: center;
+        border-radius: 10px;
+        img {
+            max-width: 100%;
+            width: auto;
+            margin: 0 auto;
+            object-fit: contain;
+            border-radius: 10px !important;
+        }
+    }
+
+    .slick-arrow { 
+        width: 92px;
+        height: 92px;
+        @include b-radius(50px);
+        z-index: 9;
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+        }
+
+        &::before {
+            content: '';
+            background: url('../images/arrow.svg');
+            width: 18px;
+            height: 36px;
+            position: absolute;
+            top: 30px;
+            right: 33px;
+            opacity: 1;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+
+    }
+
+    .slick-prev {
+        right: -60px;
+    }
+
+    .slick-next {
+        left: -60px;
+
+        &::before {
+            transform: rotate(180deg);
+            right: 40px;
+        }
+    }
+
+    .slick-dots {
+        bottom: 0px;
+        position: relative;
+        li {
+            width: 11px;
+            height: 11px;
+            background: $sub-color;
+            color: transparent;
+            opacity: 1;
+            @include b-radius(50px);
+            border: 2px solid transparent;
+
+            button {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        .slick-active {
+            background: $font-color-sub;
+            border: 2px solid #707070;
+            width: 33px;
+        }
+    }
+}
+
+

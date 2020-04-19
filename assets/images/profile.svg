@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.633" height="22.794" viewBox="0 0 19.633 22.794">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="19.633" height="22.794" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="profile" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <g id="profile-2" data-name="profile" transform="translate(1 1)">
+      <ellipse id="Ellipse_11" data-name="Ellipse 11" cx="6.297" cy="6.053" rx="6.297" ry="6.053" transform="translate(2.519 0)" fill="none" stroke="#c9952e" stroke-width="2"/>
+      <path id="Path_7" data-name="Path 7" d="M6,20.975A8.651,8.651,0,0,1,14.816,12.5a8.651,8.651,0,0,1,8.816,8.475" transform="translate(-6 0.818)" fill="none" stroke="#c9952e" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

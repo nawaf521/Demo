@@ -1,0 +1,137 @@
+.left-profile-block {
+    .item-order-details-block {
+        margin-top: 30px;
+
+        .item-order-details {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 15px;
+            padding-bottom: 30px;
+
+            .checkbox-input {
+                @include line-hight;
+            }
+
+            .iimg-pro-cart {
+                img {
+                    height: 75px;
+                    width: auto;
+                    margin: 0 auto;
+                }
+            }
+
+            .products-name-data {
+                width: 50%;
+                color: $sub-color4;
+                font-size: $font-size - 2;
+                padding-right: 15px;
+                @include line-hight;
+
+                .desc-details-product {
+                    font-size: $font-size - 4;
+                    color: rgba($sub-color4, 0.7);
+                }
+            }
+
+            .quantity-numner-details {
+                @include line-hight;
+
+                span {
+                    background: #EFF1F4;
+                    display: block;
+                    width: 50px;
+                    text-align: center;
+                    height: 40px;
+                    line-height: 40px;
+                    @include b-radius(5px);
+                    margin: 0 auto;
+                }
+            }
+
+            .price-product-order {
+                @include line-hight;
+                color: $sub-color4;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+
+// address
+.blocks-addrss {
+    padding-bottom: 40px;
+     
+    .item-address {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+
+        .checkboc-addrsss {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .data-address-block {
+            display: flex;
+            justify-content: space-between;
+            background: $sub-color3;
+            padding: 20px;
+            box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.15);
+            .address-data {
+                p {
+                    margin-bottom: 10px;
+                    color: #95989A;
+                    font-size: $font-size - 4;
+                }
+
+                .selector-p {
+                    color: $bg-header;
+                }
+            }
+
+            .btn-update-address {
+                a {
+                    color: $bg-header;
+                    font-size: $font-size - 2;
+                    border: 1px solid $bg-header;
+                    display: block;
+                    padding: 5px 20px;
+                    border-radius: 25px;
+
+                    &:hover {
+                        background: $bg-header;
+                        color: $white-color;
+                        -webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+                        box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+                    }
+                }
+
+            }
+        }
+    }
+
+    .btn-send{
+        margin-top: 30px;
+    }
+}
+
+
+// data-address-block
+.data-address-block{
+    .data-visa-number{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 40px;
+        .numner-visa{
+            line-height: 50px;
+            direction: ltr;
+            color: $sub-color2;
+            margin-right: 15px;
+        }
+    }
+   
+}

@@ -1,0 +1,152 @@
+// styling of dropdown menu
+.mobile-header-nav {
+    background-color: #2b2b2b;
+    display: none; // hide until menu is clicked
+    list-style: none;  // replace with %styled-list
+    margin: 0; // replace with %styled-list
+    padding: 0; // replace with %styled-list
+    position: absolute;
+    top: 135px; // if nav sliding in below header
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    //border-bottom: 1px solid #e4e4e4 !important;
+    -webkit-box-shadow: 0 12px 20px 0 rgba(229, 165, 143, 0.2);
+    -moz-box-shadow: 0 12px 20px 0 rgba(229, 165, 143, 0.2);
+    box-shadow: 0 12px 20px 0 rgba(229, 165, 143, 0.2);
+    li {
+      display: flex;
+      a {
+        color: #fff;
+        text-align: center;
+        line-height: 48px; 
+        height: 50px;
+        width: 100%;
+        transition: none !important;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        overflow: hidden;
+        border-bottom:1px solid #e6e6e6;
+        &:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          left: 50%;
+          right: 50%;
+          bottom: 0;
+          background:#f000 ;
+          height: 2px;
+          -webkit-transition-property: left, right;
+          transition-property: left, right;
+          -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out
+        }
+        //@include b-radius(22.5px);
+        &:hover {
+          //@include b-radius(22.5px);
+          //background-color: rgba($w-color, 0.5);
+          //color: $menu-hover;
+          //font-family: $font-bold;
+          //line-height: 50px;
+          //height: 45px;
+        }
+      }
+  
+      a:active:before, a:focus:before, a:hover:before {
+        left: 0;
+        right: 0
+      }
+    }
+  }
+  
+  // styling of hamburger menu
+  .hamburger-menu {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    padding-top: 12px;
+    padding-right: 10px;
+    // margin-top: 8px;
+    position: absolute;
+    left: 10px;
+    @include b-radius(100%);
+    background:#4e5052;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      cursor: pointer;
+    }
+    .menu-item {
+      background: #fff;
+      background-repeat: no-repeat;
+      height: 4px;
+      margin: 0 0 4px;
+      transition: all 0.3s ease-in-out;
+      width: 22px;
+      display: block;
+      @include b-radius(5px);
+    }
+    &.open {
+      .menu-item {
+        margin: 0 0 4px;
+        left: 4px;
+        position: relative;
+        &:first-child {
+          transform: rotate(45deg);
+          left: 0;
+          top: 10px;
+          position: relative;
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          //transform: rotate(-45deg);
+          //transform-origin: 8px;
+          transform: rotate(-45deg);
+          transform-origin: 0;
+          position: relative;
+          //left: 3px;
+          //top: -2px;
+          left: 2px;
+          top: 2px;
+        }
+      }
+  
+    }
+  }
+  
+  .border-menu{
+    border-top: 2px solid rgba(244, 167, 140, 0.5);
+    margin-bottom: 15px;
+  }
+  
+  #menu-menu-mobile{
+    margin: 0;
+    padding: 0;
+  }
+  
+  header #menu ul li{
+    display: block;
+    line-height: 45px;
+    height: inherit;
+  }
+  
+  
+  @media only screen and (max-width: 640px) {
+    .hamburger-menu.open .menu-item:nth-child(3) {
+      left: 3px;
+      top: 0;
+    }
+  
+    .hamburger-menu.open .menu-item:first-child {
+      left: 0;
+      top: 8px;
+    }
+  }
